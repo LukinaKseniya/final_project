@@ -1,0 +1,130 @@
+.main-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/bg_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-color: rgba(17, 17, 17, 0.7);
+  padding: 40px 150px;
+  min-height: 1024px;
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.7);
+    z-index: 2;
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 3;
+  width: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 219px;
+  text-decoration: none;
+  color: #ffffff;
+
+  &__svg {
+    fill: currentColor;
+  }
+
+  &__text {
+    font-family: Raleway;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+  }
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-right: 63px;
+  min-width: 637px;
+
+  &__link {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:nth-child(2) {
+      color: #c7b299;
+    }
+  }
+}
+
+.cart {
+  appearance: none;
+  border: 0;
+  background: inherit;
+  margin-right: 28px;
+
+  &__svg {
+    fill: #fff;
+    vertical-align: middle;
+
+    &:hover {
+      fill: #000;
+      cursor: pointer;
+    }
+  }
+}
+
+.btn-search__input[type="search"] {
+  width: 24px;
+  height: 24px;
+  outline: none;
+  background-image: url(../img/search.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  background-color: inherit;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+
+  &:focus {
+    width: 200px;
+    border: 2px solid #fff;
+    transition: width 1s ease-out;
+    background-position: right;
+  }
+}
+
+.slider {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
