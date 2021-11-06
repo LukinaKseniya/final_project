@@ -1,47 +1,45 @@
 .main-header {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url(../img/bg_header.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
-  background-color: rgba(17, 17, 17, 0.7);
-  padding: 40px 150px;
   min-height: 1024px;
+  background-image: url(../img/bg_header.png);
+  background-color: #f4f5f8;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 0;
   position: relative;
-  width: 100%;
+  display: flex;
+  justify-content: center;
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
+    z-index: 2;
     top: 0;
-    right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(17, 17, 17, 0.7);
-    z-index: 2;
+    right: 0;
+    background-color: rgba(17, 17, 17, 0.7);
   }
 }
 
+// .container {
+//   margin: 0 auto;
+// }
+
 .header {
-  position: relative;
+  position: absolute;
   z-index: 3;
-  width: 72%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding-top: 40px;
+  width: 1170px;
 }
 
 .logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 219px;
   text-decoration: none;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-right: 219px;
 
   &__svg {
     fill: currentColor;
@@ -59,12 +57,10 @@
   }
 }
 
-.nav {
+.menu {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
   margin-right: 63px;
-  min-width: 637px;
 
   &__link {
     font-family: Montserrat;
@@ -72,14 +68,15 @@
     font-weight: 300;
     text-decoration: none;
     color: #fff;
+    margin-right: 30px;
+  }
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &__link:nth-child(2) {
+    color: #c7b299;
+  }
 
-    &:nth-child(2) {
-      color: #c7b299;
-    }
+  &__link:last-child {
+    margin-right: 0;
   }
 }
 
@@ -88,6 +85,7 @@
   border: 0;
   background: inherit;
   margin-right: 28px;
+  padding: 0;
 
   &__svg {
     fill: #fff;
@@ -124,7 +122,12 @@
 }
 
 .slider {
-  position: relative;
-  z-index: 3;
-  width: 100%;
+}
+
+.arrow {
+  &-left {
+  }
+
+  &-right {
+  }
 }
