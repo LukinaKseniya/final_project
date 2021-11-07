@@ -1,0 +1,60 @@
+.direction {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.card {
+  width: 266px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover &__icon {
+    fill: #c7b299;
+  }
+
+  &:hover &__title {
+    color: #c7b299;
+  }
+  &:hover:after {
+    background-color: #c7b299;
+  }
+
+  &__icon {
+    fill: #555555;
+  }
+
+  &__title {
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+
+  &__text {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 19px;
+    margin-bottom: 30px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+  }
+}
