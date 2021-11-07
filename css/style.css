@@ -494,6 +494,64 @@ template {
 .slider {
   z-index: 3;
   margin-top: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 1620px;
+}
+
+.arrow {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 75px;
+  margin: 0;
+}
+
+.arrow::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 0;
+  border: 1px solid #fff;
+  background-color: #fff;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  opacity: 0.5;
+  position: absolute;
+  top: 54px;
+  left: 0;
+}
+
+.arrow::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 0;
+  border: 1px solid #fff;
+  background-color: #fff;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  opacity: 0.5;
+  position: absolute;
+  top: 18px;
+  left: 0;
+}
+
+.arrow-right::before {
+  top: 18px;
+}
+
+.arrow-right::after {
+  top: 54px;
 }
 
 .wrapper {
@@ -507,7 +565,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 589px;
+  width: 37%;
 }
 
 .wrapper_subtitle {
@@ -555,7 +613,41 @@ template {
   color: #ffffff;
   font-family: "Raleway";
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 23px;
   text-transform: uppercase;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 327px;
+  padding-bottom: 40px;
+}
+
+.pagination__item {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.pagination__item:last-child {
+  margin-right: 0;
+}
+
+.pagination__item:hover {
+  border: 2px solid #d3c1ad;
+  background-color: #323136;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
