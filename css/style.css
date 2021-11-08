@@ -726,3 +726,46 @@ template {
   height: 3px;
   background-color: #f1eee9;
 }
+
+.realization {
+  background-color: #fbfaf8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 83px;
+}
+
+.realization__title {
+  color: #555555;
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.realization__txt {
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  width: 40%;
+  text-align: center;
+}
+
+.realization__box-img {
+  width: 1230px;
+  min-height: 482px;
+  background-image: url(../img/realization_center.jpg), url(../img/realization_left.jpg), url(../img/realization_right.jpg);
+  background-size: 100% 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center, bottom left, bottom right;
+}
